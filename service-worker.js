@@ -1,4 +1,4 @@
-const CACHE_NAME = 'snake-mma-v1';
+const CACHE_NAME = 'snake-mma-v2';
 const APP_FILES = ['./','./index.html','./style.css','./game.js','./manifest.json','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_FILES)));
